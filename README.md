@@ -2,7 +2,7 @@
 Implementation of Minimax Algorithm on tic tac toe.
 
 ## Board
-![Image of Board](TicTacToe/board.png)
+![Image of Board](TicTacToe/board.jpg)
 
 ## Minimax Explanation
 
