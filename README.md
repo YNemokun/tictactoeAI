@@ -59,5 +59,5 @@ There is also an interactive function called AI_human, where the player can play
 ## Game Analysis
 
 
-
+## Footnotes
 [1]: Coding an UNBEATABLE Tic Tac Toe AI (Game Theory Minimax Algorithm EXPLAINED) https://youtu.be/fT3YWCKvuQE
