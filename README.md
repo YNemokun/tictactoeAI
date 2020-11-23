@@ -2,7 +2,7 @@
 Implementation of Minimax Algorithm on tic tac toe.
 
 ## Board
-![Image of Board](Board.jpg)
+![Image of Board](images/Board.jpg)
 
 ## Minimax Explanation
 
@@ -47,7 +47,7 @@ def maximizer(state):
 ## Game File
 All the print functions are turned off, or the games should run like this:
 
-![Image of Result](Run.png)
+![Image of Result](images/Run.png)
 
 
 The first two moves are randomly generated to make the program run faster.
