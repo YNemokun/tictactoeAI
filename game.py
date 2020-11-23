@@ -2,7 +2,7 @@
 Try running the module
 """
 
-from tictactoeAI import tictactoe
+import tictactoe
 
 trials = 20
 
