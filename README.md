@@ -23,18 +23,19 @@ def maximizer(state):
 ```
 
 ## Code Explanation
-  ### dictionary
+  ### Dictionary
    The two methods will returrn the max/min value from a dictionary.
-  ### maximizer
+  ### Maximizer
    The maximizer will maximize the moves for the maximum player, usually X or human.
-  ### minimizer
+  ### Minimizer
    The minimizer will minimize the moves for the minimun player, usually O or computer.
-  ### utility functions
+  ### Utility functions
    This function will calculate the values of each position for the current board. 
    We will assign a value for each state of winning: 
-      X wins = 1, O wins = -1, draw/game continued = 0
-   The utility function, which is combined in the code, will add the stae value to the numbers of empty positions (reference: https://youtu.be/fT3YWCKvuQE)
-
+      wins = 1, draw = 0
+   The utility function, which is combined in the code, will add the winner value to the numbers of empty positions. If the winner is the minimum player, we will multiply the utility value by -1(reference: https://youtu.be/fT3YWCKvuQE).
+      utility = (winning state + empty spots) * (winning player)
+   For example, in the board above, if X wins immediate, the utility equation should return (1 + 7) * 1 = 8
 ## Game File
 All the print functions are turned off, or the games should run like this:
 
