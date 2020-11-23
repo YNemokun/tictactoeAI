@@ -24,22 +24,21 @@ def maximizer(state):
 
 ## Code Explanation
   ### dictionary
-    The two methods will returrn the max/min value from a dictionary.
-    
+   The two methods will returrn the max/min value from a dictionary.
   ### maximizer
-    The maximizer will maximize the moves for the maximum player, usually X or human.
+   The maximizer will maximize the moves for the maximum player, usually X or human.
   ### minimizer
-    The minimizer will minimize the moves for the minimun player, usually O or computer.
+   The minimizer will minimize the moves for the minimun player, usually O or computer.
   ### utility functions
-    This function will calculate the values of each position for the current board. 
-    We will assign a value for each state of winning: 
-    X wins = 1, O wins = -1, draw/game continued = 0
-    The utility function, which is combined in the code, will add the stae value to the numbers of empty positions (reference: https://youtu.be/fT3YWCKvuQE)
+   This function will calculate the values of each position for the current board. 
+   We will assign a value for each state of winning: 
+      X wins = 1, O wins = -1, draw/game continued = 0
+   The utility function, which is combined in the code, will add the stae value to the numbers of empty positions (reference: https://youtu.be/fT3YWCKvuQE)
 
 ## Game File
 All the print functions are turned off, or the games should run like this:
 
-![Image of Result](TicTacToe/Run.png)
+![Image of Result](Run.png)
 
 
 The first two moves are randomly generated to make the program run faster.
