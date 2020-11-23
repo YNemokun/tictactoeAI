@@ -40,7 +40,7 @@ def maximizer(board, player):
    
       wins = 1, draw = 0
       
-   The utility function, which is combined in the code, will add the winner value to the numbers of empty positions. If the winner is the minimum player, we will multiply the utility value by -1. [^1]
+   The utility function, which is combined in the code, will add the winner value to the numbers of empty positions. If the winner is the minimum player, we will multiply the utility value by -1. [1]
    
       utility = (winning state + empty spots) * (winning player)
       
@@ -60,4 +60,4 @@ There is also an interactive function called AI_human, where the player can play
 
 
 
-[^1]: Coding an UNBEATABLE Tic Tac Toe AI (Game Theory Minimax Algorithm EXPLAINED) https://youtu.be/fT3YWCKvuQE
+[1]: Coding an UNBEATABLE Tic Tac Toe AI (Game Theory Minimax Algorithm EXPLAINED) https://youtu.be/fT3YWCKvuQE
