@@ -9,20 +9,22 @@ Implementation of Minimax Algorithm on tic tac toe.
 The Minimax Algorithm will maximize the score for X and minimize the score for O. This way the AI can choose the optimum move for each player.
 Our basic algorithm for the maximum player will be:
 ```
-def maximizer(state):
+def maximizer(board, player):
   create an empty dictionary
-  if there is empty spots on the board:
+  for every empty spots on the board:
     place player
-    calculate utility
+    calculate the score of current board
     if there is a winner:
       append the score and its position to a dictionary
     else:
-      use the minimizer and get the minimum
+      call the minimizer and get the minimum
       append that minimum
  return the dictionary
 ```
 
 ## Code Explanation
+  ### Game Setup
+  
   ### Dictionary
    The two methods will returrn the max/min value from a dictionary.
    
