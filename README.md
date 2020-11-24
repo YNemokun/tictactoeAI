@@ -40,23 +40,20 @@ def maximizer(board, player):
    
    . . .
    
-   * Item 1
-   * Item 2
-    * Item 2a
-    * Item 2b
+
    The other functions are:
-    * Positions
+   * Positions
       * Convert the number position into indices
       * Return the player at a position
-    * Empty or not
+   * Empty or not
       * Check if the position is empty
       * Count the numbers of empty positions
       * Return all empty positions
-    * Moves
+   * Moves
       * A method for human players to type their moves
       * Place a chip at a certain position
       * Place a chip at a random position
-    * Winners
+   * Winners
       * Check if the board still has empty spots
       * Return the winner
       
