@@ -35,12 +35,13 @@ def maximizer(board, player):
 ```   
    There are also three chips: X, O, and EMPTY, which are all type string. When the game starts, a new empty board will be created:
    
+```
    .  .  .
    
    .  .  .
    
    .  .  .
-   
+```
 
    The other functions are:
    * Positions
