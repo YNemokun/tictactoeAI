@@ -62,7 +62,7 @@ def maximizer(board, player):
    With these basic functions, we can build a tic-tac-toe game against a random computer.
       
   ### Dictionary
-   The two methods will returrn the max/min value from a dictionary.
+   The two methods will return the first of all max/min values from a dictionary.
    
   ### Maximizer
    The maximizer will maximize the moves for the maximum player, usually X or human.
@@ -82,13 +82,15 @@ def maximizer(board, player):
       
    For example, in the board above, if X wins immediate, the utility equation should return (1 + 7) * 1 = 8
    
-## Game File
+## Game.py
+
+The first two moves are randomly generated to make the program run faster. For now, the file will return a list of winners for each type of game.
+
+
 All the print functions are turned off, or the games should run like this:
 
 ![Image of Result](images/Run.png)
 
-
-The first two moves are randomly generated to make the program run faster.
 
 There is also an interactive function called AI_human, where the player can play against the AI.
 
