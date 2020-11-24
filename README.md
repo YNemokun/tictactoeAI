@@ -24,7 +24,36 @@ def maximizer(board, player):
 
 ## Code Explanation
   ### Game Setup
-  
+   We will create a list of three lists, each containing three strings. From top to bottom, left to right, we number each position from 1 to 9. The positions should be as follow:
+   
+   1 2 3
+   4 5 6
+   7 8 9
+   
+   There are also three chips: X, O, and EMPTY, which are all type string. When the game starts, a new empty board will be created:
+   
+   . . .
+   . . .
+   . . .
+   
+   The other functions are:
+    * Positions
+      * Convert the number position into indices
+      * Return the player at a position
+    * Empty or not
+      * Check if the position is empty
+      * Count the numbers of empty positions
+      * Return all empty positions
+    * Moves
+      * A method for human players to type their moves
+      * Place a chip at a certain position
+      * Place a chip at a random position
+    * Winners
+      * Check if the board still has empty spots
+      * Return the winner
+      
+   With these basic functions, we can build a tic-tac-toe game against a random computer.
+      
   ### Dictionary
    The two methods will returrn the max/min value from a dictionary.
    
