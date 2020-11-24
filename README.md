@@ -26,19 +26,19 @@ def maximizer(board, player):
   ### Game Setup
    We will create a list of three lists, each containing three strings. From top to bottom, left to right, we number each position from 1 to 9. The positions should be as follow:
    
-   1 2 3
+   1  2  3
    
-   4 5 6
+   4  5  6
    
-   7 8 9
+   7  8  9
    
    There are also three chips: X, O, and EMPTY, which are all type string. When the game starts, a new empty board will be created:
    
-   . . .
+   .  .  .
    
-   . . .
+   .  .  .
    
-   . . .
+   .  .  .
    
 
    The other functions are:
