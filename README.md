@@ -86,6 +86,7 @@ def maximizer(board, player):
 
 The first two moves are randomly generated to make the program run faster. For now, the file will return a list of winners for each type of game.
 
+![Image of Result](images/result.png)
 
 All the print functions are turned off, or the games should run like this:
 
