@@ -1,6 +1,8 @@
 # tictactoeAI
 Implementation of Minimax Algorithm on tic tac toe.
 
+This project uses **Python 3**. The older python versions may have problem running "//" in line 65 in tictactoe.py
+
 ## Board
 ![Image of Board](images/Board.jpg)
 
@@ -115,8 +117,13 @@ All the print functions are turned off, or the games should run like this:
 
 ![Image of Result](images/Run.png)
 
-
 There is also an interactive function called AI_human, where the player can play against the AI.
+
+![Image of Result](images/player.png)
+
+When choosing a player, type either "X" or "O", else the code will ask you to try again.
+
+![Image of Result](images/wrong.png)
 
 ## Game Analysis
 
