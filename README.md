@@ -7,6 +7,7 @@ Implementation of Minimax Algorithm on tic tac toe.
 ## Minimax Explanation
 
 The Minimax Algorithm will maximize the score for X and minimize the score for O. This way the AI can choose the optimum move for each player.
+
 Our basic algorithm for the maximum player will be:
 ```
 def maximizer(board, player):
@@ -21,6 +22,26 @@ def maximizer(board, player):
       append that minimum
  return the dictionary
 ```
+
+For example, in a X-to-move situation:
+
+![Image of Board](images/0.jpg)
+
+First, the Minimax Algorithm will go and explore **every possible moves** on the board. Since tic-tac-toe is a simple game, we do not set a maximum depth for the algorithm. It will stop **when there is a winner or when the board is full**, and calculate the value of that board using the utility function (see below).
+
+![Image of Board](images/1.jpg)
+
+When there is only one result situation, the value and the player's move will automatically pass up to the previous board
+
+![Image of Board](images/2.jpg)
+
+However, when there are more than one board, depends on the player type (max or min), the get_min/get_max functions from the dictionary will *only* return the min/max value and that move up to the previous board. In this image, the selected minium/maximum values are circled in yellow.
+
+![Image of Board](images/3.jpg)
+
+![Image of Board](images/4.jpg)
+
+Finally, the values go back to the first board, and it will return the optimum move based on the values it gathered. In this example, X's best move is at 4. 
 
 ## Code Explanation
   ### Game Setup
