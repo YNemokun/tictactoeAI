@@ -101,7 +101,9 @@ Finally, the values go back to the first board, and it will return the optimum m
    
       utility = (winning state + empty spots) * (winning player)
       
-   For example, in the board above, if X wins immediate, the utility equation should return (1 + 7) * 1 = 8
+   For example, in the board below, if X wins immediate, the utility equation should return (1 + 7) * 1 = 8
+   
+   ![Image of Board](images/Board.png)
    
 ## Game.py
 
