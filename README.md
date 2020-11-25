@@ -105,7 +105,7 @@ Finally, the values go back to the first board, and it will return the optimum m
       
    For example, in the board below, if X wins immediate, the utility equation should return (1 + 7) * 1 = 8
    
-   ![Image of Board](images/Board.png)
+   ![Image of Board](images/Board.jpg)
    
 ## Game.py
 
