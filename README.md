@@ -29,15 +29,21 @@ For example, in a X-to-move situation:
 
 ![Image of Board](images/0.png)
 
-First, the Minimax Algorithm will go and explore **every possible moves** on the board. Since tic-tac-toe is a simple game, we do not set a maximum depth for the algorithm. It will stop **when there is a winner or when the board is full**, and calculate the value of that board using the utility function (see below).
+First, the Minimax Algorithm will go and explore **every possible moves** on the board. Since tic-tac-toe is a simple game, we do not set a maximum depth for the algorithm. It will stop **when there is a winner or when the board is full**, calculate the value of that board using the utility function (see below), and record the value and its corresponding move in a dictionary.
+
+This algorithm runs recursively, so we will calculate the values from the bottom and return them up the chain, to the board we start with. Here is a visualization:
 
 ![Image of Board](images/1.png)
 
-When there is only one result situation, the value and the player's move will automatically pass up to the previous board
+When there is only one result situation, the value and the player's move will automatically pass up to the previous board. 
 
 ![Image of Board](images/2.png)
 
-However, when there are more than one board, depends on the player type (max or min), the get_min/get_max functions from the dictionary will *only* return the min/max value and that move up to the previous board. In this image, the selected minium/maximum values are circled in yellow.
+However, when there are more than one board, depends on the player type (max or min), the get_min/get_max functions from the dictionary will *only* return the min/max value and send that up to the previous board. 
+
+For example, Situation A has a value of **-2**: 1 for the winner, 1 for the empty spot, and a scalar -1 for the minimum player (see utility function below). Situation B has a value of **0** which is passed up by the draw state at position 6. Since O player always chooses the move that minimizes the board values, it will pick the move that results in the smallest outcome possible; in this case, when choosing from a dictionary **{4: 0, 6: -2}**, O will pick position 6.
+
+In these images, the selected minium/maximum values are circled in yellow. 
 
 ![Image of Board](images/3.png)
 
