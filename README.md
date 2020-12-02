@@ -1,4 +1,5 @@
 # tictactoeAI
+
 Implementation of Minimax Algorithm on tic tac toe.
 
 This project uses **Python 3**. The older python versions may have problem running "//" in line 65 in tictactoe.py
