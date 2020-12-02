@@ -5,8 +5,8 @@ Tic Tac Toe Module
 # ==============================================
 import random as rnd
 import copy
-from dictonary import get_max_key
-from dictonary import get_min_key
+from dictionary import get_max_key
+from dictionary import get_min_key
 
 # ==============================================
 
