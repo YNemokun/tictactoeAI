@@ -457,6 +457,48 @@ def AI_random(trials=1):
     return winners
 
 
+def random_AI(trials=1):
+    """
+    AI play against a random position generator
+    :param trials:
+    :return: a list of winners
+    """
+    winners = []
+    while trials > 0:
+        game_board = new_board()
+        winner = EMPTY
+        xTurn = True
+        # show_board(game_board)
+
+        placePlayer(game_board, X, randOpenMove(game_board))
+        placePlayer(game_board, O, randOpenMove(game_board))
+        # show_board(game_board)
+        while hasMoves(game_board) and winner == EMPTY:
+            if not xTurn:
+                s = minimize_move(game_board, O)
+                # print("X move values : ", s)
+                m = get_min_key(s)
+                # print("move is : ", m)
+                placePlayer(game_board, O, m)
+            else:
+                placePlayer(game_board, X, randOpenMove(game_board))
+
+            winner = checkForWinner(game_board)
+            # show_board(game_board)
+
+            xTurn = not xTurn
+
+        # print("Game over")
+        if winner is not EMPTY:
+            # print(winner + " is the winner")
+            winners.append(winner)
+        else:
+            # print("It is a tie...")
+            winners.append(EMPTY)
+        trials -= 1
+    return winners
+
+
 """
 The testing trials. Remember to comment these out if this file is used as a module.
 """
@@ -464,3 +506,4 @@ The testing trials. Remember to comment these out if this file is used as a modu
 # print(AI_human())
 # print(AI_AI(10))
 # print(AI_random(10))
+# print(random_AI(10))
