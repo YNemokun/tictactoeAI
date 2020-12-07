@@ -134,7 +134,7 @@ When choosing a player, type either "X" or "O", else the code will ask you to tr
 
 ## Game Analysis
 
-We generated four csv files of game data: AI vs. Random, AI vs. AI, Random vs. Random, Random vs. AI. Each file contains lists of results from 100 games. The data file looks like this:
+We generated four csv files of game data: AI vs. Random, AI vs. AI, Random vs. Random, Random vs. AI. Each file contains lists of results from 500 games. The data file looks like this:
 
 ```
   X wins,O wins,Draw
