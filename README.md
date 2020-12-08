@@ -136,6 +136,12 @@ When choosing a player, type either "X" or "O", else the code will ask you to tr
 
 To prove the efficacy of AI, we generated a 2-by-2 design of four csv files of game data: AI vs. Random, AI vs. AI, Random vs. Random, Random vs. AI. Each file contains lists of results from 1000 runs, with 100 games in each run. 
 ***player x and o, ai and random, assessment (table)
+
+|       | Description | Test Text     |
+| :---        |    :----:   |          ---: |
+| Header      | Title       | Here's this   |
+| Paragraph   | Text        | And more      |
+
 remind
 description***
 The data file looks like this:
