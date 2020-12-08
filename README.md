@@ -134,7 +134,7 @@ When choosing a player, type either "X" or "O", else the code will ask you to tr
 
 ## Game Analysis
 
-We generated four csv files of game data: AI vs. Random, AI vs. AI, Random vs. Random, Random vs. AI. Each file contains lists of results from 500 games. The data file looks like this:
+We generated four csv files of game data: AI vs. Random, AI vs. AI, Random vs. Random, Random vs. AI. Each file contains lists of results from 1000 games. The data file looks like this:
 
 ```
   X wins,O wins,Draw
@@ -146,7 +146,7 @@ We generated four csv files of game data: AI vs. Random, AI vs. AI, Random vs. R
   97,0,3
 ```
 
-From these four files we created four pie chart, showing the precentage of each winner in different types of methods:
+From these four files we created four pie charts, showing the precentage of each winner in different types of methods:
 
 ![Image of Result](images/pie.png)
 
