@@ -53,7 +53,7 @@ Finally, the values go back to the first board, and it will return the optimum m
 
   ### Board
   
-    ![Image of Board](images/Board.jpg)
+   ![Image of Board](images/Board.jpg)
 
   ### Game Setup
   
