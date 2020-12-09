@@ -134,16 +134,13 @@ When choosing a player, type either "X" or "O", else the code will ask you to tr
 
 ## Game Analysis
 
-To prove the efficacy of AI, we generated a 2-by-2 design of four csv files of game data: AI vs. Random, AI vs. AI, Random vs. Random, Random vs. AI. Each file contains lists of results from 1000 runs, with 100 games in each run. 
-***player x and o, ai and random, assessment (table)
+To prove the efficacy of AI, we generated a 2-by-2 design of four csv files of game data, with player Xs on rows and player Os on columns. The table below shows how our files will be aligned:
 
-|       | Description | Test Text     |
-| :---        |    :----:   |          ---: |
-| Header      | Title       | Here's this   |
-| Paragraph   | Text        | And more      |
+![Image of Chart](images/chart.png)
 
-remind
-description***
+***Recall that we are generating standard tic-tac-toe games with first two moves randomized. This means that X will always go first, followed by O.***
+
+Following this design, each file contains multiple runs of results. For every run,  
 The data file looks like this:
 
 ```
