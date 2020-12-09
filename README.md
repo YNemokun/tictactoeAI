@@ -1,11 +1,8 @@
 # tictactoeAI
 
-Implementation of Minimax Algorithm on tic tac toe.
+This is an implementation of Minimax Algorithm on tic-tac-toe. Since tic-tac-toe is simple, we can explore optimization, classification, and reinforcement learning with the game and compare their efficiencies. This project focuses on Minimax Optimization, which means the AI is able to find the best move and play against human players. 
 
 This project uses **Python 3**. The older python versions may have problem running "//" in line 65 in tictactoe.py
-
-## Board
-![Image of Board](images/Board.jpg)
 
 ## Minimax Explanation
 
@@ -53,7 +50,13 @@ In these images, the selected minium/maximum values are circled in yellow.
 Finally, the values go back to the first board, and it will return the optimum move based on the values it gathered. In this example, X's best move is at 4. 
 
 ## Code Explanation
+
+  ### Board
+  
+    ![Image of Board](images/Board.jpg)
+
   ### Game Setup
+  
    We will create a list of three lists, each containing three strings. From top to bottom, left to right, we number each position from 1 to 9. The positions should be as follow:
    
 ```
@@ -92,15 +95,19 @@ Finally, the values go back to the first board, and it will return the optimum m
    With these basic functions, we can build a tic-tac-toe game against a random computer.
       
   ### Dictionary
+  
    The two methods will return the first of all max/min values from a dictionary.
    
   ### Maximizer
-   The maximizer will maximize the moves for the maximum player, usually X or human.
+  
+   The maximizer will maximize the returning value of the moves for the maximum player, usually X or human.
    
   ### Minimizer
-   The minimizer will minimize the moves for the minimun player, usually O or computer.
+  
+   The minimizer will minimize the returning value of the moves for the minimun player, usually O or computer.
    
   ### Utility functions
+  
    This function will calculate the values of each position for the current board. 
    We will assign a value for each state of winning: 
    
@@ -165,4 +172,5 @@ Using those data and the table design above, we created four pie charts to show 
 ![Image of Result](images/pie.png)
 
 ## Footnotes
+
 [1]: Coding an UNBEATABLE Tic Tac Toe AI (Game Theory Minimax Algorithm EXPLAINED) https://youtu.be/fT3YWCKvuQE
