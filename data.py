@@ -12,23 +12,6 @@ def count_winners(winners):
     return {"X wins": x, "O wins": o, "Draw": trials - x - o}
 
 
-# Load winners
-# with open('ar_winners.csv','w') as file:
-#     writer = csv.writer(file)
-#     writer.writerow(["Winners"])
-
-# run = runs
-# while run > 0:
-#     run -= 1
-#     result = tictactoe.AI_random(trials)
-#     with open('ar_winners.csv','a', newline='') as file:
-#         writer = csv.writer(file)
-#
-#         for player in result:
-#             writer.writerow(player)
-#
-# print(result)
-
 # Load data
 # # AI & random
 # with open('AI_random.csv', 'w', newline='') as file:
