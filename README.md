@@ -2,7 +2,7 @@
 
 This is an implementation of Minimax Algorithm on tic-tac-toe. Since tic-tac-toe is simple, we can explore optimization, classification, and reinforcement learning with the game and compare their efficiencies. This project focuses on Minimax Optimization, which means the AI is able to find the best move and play against human players. 
 
-This project uses **Python 3**. The older python versions may have problem running "//" in line 65 in tictactoe.py
+Note that all code in this project is written in **Python 3**. The older python versions may have problem running "//" in line 65 in tictactoe.py
 
 ## Minimax Explanation
 
