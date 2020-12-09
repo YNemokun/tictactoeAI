@@ -140,8 +140,13 @@ To prove the efficacy of AI, we generated a 2-by-2 design of four csv files of g
 
 ***Recall that we are generating standard tic-tac-toe games with first two moves randomized. This means that X will always go first, followed by O.***
 
-Following this design, each file contains multiple runs of results. For every run,  
-The data file looks like this:
+Following this design, each file contains multiple runs of results. For every run, we have counted the winners of 100 games and recorded the values as a dictionary:
+
+```
+  {"X wins": 99, "O wins": 0, "Draw": 1}
+```
+
+After collecting multiple dictionaries, the data file looks like this:
 
 ```
   X wins,O wins,Draw
@@ -152,8 +157,10 @@ The data file looks like this:
   96,0,4
   97,0,3
 ```
-***data above, why build datafile, final analysis***
-From these four files we created four pie charts, showing the precentage of each winner in different types of methods:
+
+We will continue to add results to the data files as we run data.py.
+
+Using those data and the table design above, we created four pie charts to show the percentage of each winner in different types of methods:
 
 ![Image of Result](images/pie.png)
 
