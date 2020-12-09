@@ -138,7 +138,7 @@ To prove the efficacy of AI, we generated a 2-by-2 design of four csv files of g
 
 ![Image of Chart](images/chart.png)
 
-***Recall that we are generating standard tic-tac-toe games with first two moves randomized. This means that X will always go first, followed by O.***
+**Recall that we are generating standard tic-tac-toe games with first two moves randomized. This means that X will always go first, followed by O.**
 
 Following this design, each file contains multiple runs of results. For every run, we have counted the winners of 100 games and recorded the values as a dictionary:
 
