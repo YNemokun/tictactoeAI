@@ -151,7 +151,9 @@ When choosing a player, type either "X" or "O", else the code will ask you to tr
 
 To prove the efficacy of AI, we generated a 2-by-2 design of four csv files of game data, with player Xs on rows and player Os on columns. The table below shows how our files will be aligned:
 
-![Image of Chart](images/chart.png)
+<p align = "center">
+  <img src = "images/chart.png" width = "50%" height = "50%"/>
+</p>
 
 **Recall that we are generating standard tic-tac-toe games with first two moves randomized. This means that X will always go first, followed by O.**
 
@@ -177,7 +179,9 @@ We will continue to add results to the data files as we run data.py.
 
 Using those data and the table design above, we created four pie charts to show the percentage of each winner in different types of methods:
 
-![Image of Result](images/pie.png)
+<p align = "center">
+  <img src = "images/pie.png" width = "50%" height = "50%"/>
+</p>
 
 ## Footnotes
 
