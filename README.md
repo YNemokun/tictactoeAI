@@ -25,7 +25,7 @@ def maximizer(board, player):
 
 For example, in a X-to-move situation:
 
-![Image of Board](images/0.png)
+![Image of Board](images/0.png =250x250)
 
 First, the Minimax Algorithm will go and explore **every possible moves** on the board. Since tic-tac-toe is a simple game, we do not set a maximum depth for the algorithm. It will stop **when there is a winner or when the board is full**, calculate the value of that board using the utility function (see below), and record the value and its corresponding move in a dictionary.
 
