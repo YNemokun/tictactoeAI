@@ -25,7 +25,9 @@ def maximizer(board, player):
 
 For example, in a X-to-move situation:
 
-![Image of Board](images/0.png)
+<p align = "center">
+  <img src = "images/0.png" />
+</p>
 
 First, the Minimax Algorithm will go and explore **every possible moves** on the board. Since tic-tac-toe is a simple game, we do not set a maximum depth for the algorithm. It will stop **when there is a winner or when the board is full**, calculate the value of that board using the utility function (see below), and record the value and its corresponding move in a dictionary.
 
@@ -180,7 +182,7 @@ We will continue to add results to the data files as we run data.py.
 Using those data and the table design above, we created four pie charts to show the percentage of each winner in different types of methods:
 
 <p align = "center">
-  <img src = "images/pie.png" width = "50%" height = "50%"/>
+  <img src = "images/pie.png" width = "75%" height = "75%"/>
 </p>
 
 ## Footnotes
