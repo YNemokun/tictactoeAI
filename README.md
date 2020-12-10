@@ -31,7 +31,7 @@ First, the Minimax Algorithm will go and explore **every possible moves** on the
 
 This algorithm runs recursively, so we will calculate the values from the bottom and return them up the chain, to the board we start with. Here is a visualization:
 
-<img src = "images/1.png" width = "50%" height = "50%" />
+<img src = "images/1.png" width = "50%" height = "50%" halign = "center" />
 
 When there is only one result situation, the value and the player's move will automatically pass up to the previous board. 
 
