@@ -37,7 +37,9 @@ This algorithm runs recursively, so we will calculate the values from the bottom
 
 When there is only one result situation, the value and the player's move will automatically pass up to the previous board. 
 
-![Image of Board](images/2.png)
+<p align = "center">
+  <img src = "images/2.png" width = "50%" height = "50%"/>
+</p>
 
 However, when there are more than one board, depends on the player type (max or min), the get_min/get_max functions from the dictionary will *only* return the min/max value and send that up to the previous board. 
 
@@ -45,9 +47,13 @@ For example, Situation A has a value of **-2**: 1 for the winner, 1 for the empt
 
 In these images, the selected minium/maximum values are circled in yellow. 
 
-![Image of Board](images/3.png)
+<p align = "center">
+  <img src = "images/3.png" width = "50%" height = "50%"/>
+</p>
 
-![Image of Board](images/4.png)
+<p align = "center">
+  <img src = "images/4.png" width = "50%" height = "50%"/>
+</p>
 
 Finally, the values go back to the first board, and it will return the optimum move based on the values it gathered. In this example, X's best move is at 4. 
 
