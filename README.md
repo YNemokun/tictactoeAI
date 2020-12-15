@@ -6,9 +6,9 @@ Note that all code in this project is written in **Python 3**. The older python 
 
 ## Minimax Explanation
 
-The Minimax Algorithm will maximize the score for X and minimize the score for O. This way the AI can choose the optimum move for each player.
+  The Minimax Algorithm will maximize the score for X and minimize the score for O. This way the AI can choose the optimum move for each player.
 
-Our basic algorithm for the maximum player will be:
+  Our basic algorithm for the maximum player will be:
 ```
 def maximizer(board, player):
   create an empty dictionary
@@ -23,31 +23,31 @@ def maximizer(board, player):
  return the dictionary
 ```
 
-For example, in a X-to-move situation:
+  For example, in a X-to-move situation:
 
 <p align = "center">
   <img src = "images/0.png" />
 </p>
 
-First, the Minimax Algorithm will go and explore **every possible moves** on the board. Since tic-tac-toe is a simple game, we do not set a maximum depth for the algorithm. It will stop **when there is a winner or when the board is full**, calculate the value of that board using the utility function (see below), and record the value and its corresponding move in a dictionary.
+  First, the Minimax Algorithm will go and explore **every possible moves** on the board. Since tic-tac-toe is a simple game, we do not set a maximum depth for the algorithm. It will stop **when there is a winner or when the board is full**, calculate the value of that board using the utility function (see below), and record the value and its corresponding move in a dictionary.
 
-This algorithm runs recursively, so we will calculate the values from the bottom and return them up the chain, to the board we start with. Here is a visualization:
+  This algorithm runs recursively, so we will calculate the values from the bottom and return them up the chain, to the board we start with. Here is a visualization:
 
 <p align = "center">
   <img src = "images/1.png" width = "50%" height = "50%"/>
 </p>
 
-When there is only one result situation, the value and the player's move will automatically pass up to the previous board. 
+  When there is only one result situation, the value and the player's move will automatically pass up to the previous board. 
 
 <p align = "center">
   <img src = "images/2.png" width = "50%" height = "50%"/>
 </p>
 
-However, when there are more than one board, depends on the player type (max or min), the get_min/get_max functions from the dictionary will *only* return the min/max value and send that up to the previous board. 
+  However, when there are more than one board, depends on the player type (max or min), the get_min/get_max functions from the dictionary will *only* return the min/max value and send that up to the previous board. 
 
-For example, Situation A has a value of **-2**: 1 for the winner, 1 for the empty spot, and a scalar -1 for the minimum player (see utility function below). Situation B has a value of **0** which is passed up by the draw state at position 6. Since O player always chooses the move that minimizes the board values, it will pick the move that results in the smallest outcome possible; in this case, when choosing from a dictionary **{4: 0, 6: -2}**, O will pick position 6.
+  For example, Situation A has a value of **-2**: 1 for the winner, 1 for the empty spot, and a scalar -1 for the minimum player (see utility function below). Situation B has a value of **0** which is passed up by the draw state at position 6. Since O player always chooses the move that minimizes the board values, it will pick the move that results in the smallest outcome possible; in this case, when choosing from a dictionary **{4: 0, 6: -2}**, O will pick position 6.
 
-In these images, the selected minium/maximum values are circled in yellow. 
+  In these images, the selected minium/maximum values are circled in yellow. 
 
 <p align = "center">
   <img src = "images/3.png" width = "50%" height = "50%"/>
@@ -57,7 +57,7 @@ In these images, the selected minium/maximum values are circled in yellow.
   <img src = "images/4.png" width = "50%" height = "50%"/>
 </p>
 
-Finally, the values go back to the first board, and it will return the optimum move based on the values it gathered. In this example, X's best move is at 4. 
+  Finally, the values go back to the first board, and it will return the optimum move based on the values it gathered. In this example, X's best move is at 4. 
 
 ## Code Explanation
 
@@ -119,6 +119,7 @@ Finally, the values go back to the first board, and it will return the optimum m
   ### Utility functions
   
    This function will calculate the values of each position for the current board. 
+   
    We will assign a value for each state of winning: 
    
       wins = 1, draw = 0
@@ -151,21 +152,21 @@ When choosing a player, type either "X" or "O", else the code will ask you to tr
 
 ## Game Analysis
 
-To prove the efficacy of AI, we generated a 2-by-2 design of four csv files of game data, with player Xs on rows and player Os on columns. The table below shows how our files will be aligned:
+  To prove the efficacy of AI, we generated a 2-by-2 design of four csv files of game data, with player Xs on rows and player Os on columns. The table below shows how our files will be aligned:
 
 <p align = "center">
   <img src = "images/chart.png" width = "50%" height = "50%"/>
 </p>
 
-**Recall that we are generating standard tic-tac-toe games with first two moves randomized. This means that X will always go first, followed by O.**
+  **Recall that we are generating standard tic-tac-toe games with first two moves randomized. This means that X will always go first, followed by O.**
 
-Following this design, each file contains multiple runs of results. For every run, we have counted the winners of 100 games and recorded the values as a dictionary:
+  Following this design, each file contains multiple runs of results. For every run, we have counted the winners of 100 games and recorded the values as a dictionary:
 
 ```
   {"X wins": 99, "O wins": 0, "Draw": 1}
 ```
 
-After collecting multiple dictionaries, the data file looks like this:
+  After collecting multiple dictionaries, the data file looks like this:
 
 ```
   X wins,O wins,Draw
@@ -177,9 +178,9 @@ After collecting multiple dictionaries, the data file looks like this:
   97,0,3
 ```
 
-We will continue to add results to the data files as we run data.py.
+  We will continue to add results to the data files as we run data.py. Up till now, each file contains 10,000 runs and 1,000,000 games in total.
 
-Using those data and the table design above, we created four pie charts to show the percentage of each winner in different types of methods:
+  Using those data and the table design above, we created four pie charts to show the percentage of each winner in different types of methods:
 
 <p align = "center">
   <img src = "images/pie.png" width = "75%" height = "75%"/>
@@ -187,15 +188,15 @@ Using those data and the table design above, we created four pie charts to show 
 
 ## Final Comments on AI Performance
 
-In a standard tic-tac-toe game, X will always go first and O will always play second. Since our min/max methods always choose the lowest position number with the min/max value (for example, X's first move will always be position 1 on an empty board, after it exhaustively goes through all possible games in tic-tac-toe), we randomize the first two moves to add more variability to games generated and to speed up the algorithm. We generated 1,000,000 games to get a great sampling.
+  In a standard tic-tac-toe game, X will always go first and O will always play second. Since our min/max methods always choose the lowest position number with the min/max value (for example, X's first move will always be position 1 on an empty board, after it exhaustively goes through all possible games in tic-tac-toe), we randomize the first two moves to add more variability to games generated and to speed up the algorithm. We generated 1,000,000 games to get a great sampling.
 
-According to our graph, when AI plays as X and starts first, it never loses to O, the second player. Compared to random player, X-AI player has 40% more winning rate.
+  According to our graph, when AI plays as X and starts first, it never loses to O, the second player. Compared to random player, X-AI player has 40% more winning rate.
 
-On the bottom left of the pie charts, when X and O both play randomly, O only wins 28% of times. However, on the bottom right, where O is using the AI, O's losing rate (X's winning rate) successfully decreases from 59% to 7.8%.
+  On the bottom left of the pie charts, when X and O both play randomly, O only wins 28% of times. However, on the bottom right, where O is using the AI, O's losing rate (X's winning rate) successfully decreases from 59% to 7.8%. When two AI play against each other as on the top left, 30% more draws are generated than the pie chart on the left, when O is random. The O-AI player increases the difficulty for X-AI player to win.
 
-When two AI play against each other as on the top left, 30% more draws are generated than the pie chart on the left, when O is random. The O-AI player increases the difficulty for X-AI player to win.
+  Our AI algorithm is proven to be effective, but there are still some space for improvement. As for now, the get_min/get_max method will only return the index of the first min value it encounters (for example, when both position 2 and position 6 has the lowest utility value 0, the get_min method will only return 2). We look forward to 
+modifying this flaw so that when there are multiple mins/maxs, the algorithm is able to randomly pick one of them.
 
-Further: dictionary: get random max/min
 
 ## Footnotes
 
