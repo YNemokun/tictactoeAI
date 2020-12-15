@@ -187,13 +187,13 @@ Using those data and the table design above, we created four pie charts to show 
 
 ## Final Comments on AI Performance
 
-In a standard tic-tac-toe game, X will always go first and O will always play second. Since our min/max methods always choose the lowest position number with the min/max value (for example, X's first move will always be position 1 on an empty board, after it goes through all possible games in tic-tac-toe), we randomize the first two moves to add more variability to games generated and to speed up the algorithm. We generated 1,000,000 games to get a great sampling.
+In a standard tic-tac-toe game, X will always go first and O will always play second. Since our min/max methods always choose the lowest position number with the min/max value (for example, X's first move will always be position 1 on an empty board, after it exhaustively goes through all possible games in tic-tac-toe), we randomize the first two moves to add more variability to games generated and to speed up the algorithm. We generated 1,000,000 games to get a great sampling.
 
 According to our graph, when AI plays as X and starts first, it never loses to O, the second player. Compared to random player, X-AI player has 40% more winning rate.
 
-On the bottom left of the pie charts, when X and O both play randomly, O only wins 28% of times. However, on the bottom right, where O is using the AI, O's losing rate (X's winning rate)successfully decreases from 59% to 7.8%.
+On the bottom left of the pie charts, when X and O both play randomly, O only wins 28% of times. However, on the bottom right, where O is using the AI, O's losing rate (X's winning rate) successfully decreases from 59% to 7.8%.
 
-When two AI play against each otheras on the top left, 30% more draws are generated than the pie chart on the left, when O is random. The O-AI player increases the difficulty for X-AI player to win.
+When two AI play against each other as on the top left, 30% more draws are generated than the pie chart on the left, when O is random. The O-AI player increases the difficulty for X-AI player to win.
 
 Further: dictionary: get random max/min
 
