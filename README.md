@@ -203,4 +203,5 @@ modifying this flaw so that when there are multiple mins/maxs, the algorithm is 
 ## Footnotes
 
 [1]: Coding an UNBEATABLE Tic Tac Toe AI (Game Theory Minimax Algorithm EXPLAINED) https://youtu.be/fT3YWCKvuQE
+
 [2]: https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning "Alpha-beta pruning"
