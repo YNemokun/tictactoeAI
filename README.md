@@ -124,7 +124,7 @@ def maximizer(board, player):
    
       wins = 1, draw = 0
       
-   The utility function, which is combined in the code, will add the winner value to the numbers of empty positions. If the winner is the minimum player, we will multiply the utility value by -1. [1]
+   The utility function, which is combined in the code, will add the winner value to the numbers of empty positions. If the winner is the minimum player, we will multiply the utility value by -1. ([Video])
    
       utility = (winning state + empty spots) * (winning player)
       
@@ -202,6 +202,6 @@ modifying this flaw so that when there are multiple mins/maxs, the algorithm is 
 
 ## Footnotes
 
-[1]: Coding an UNBEATABLE Tic Tac Toe AI (Game Theory Minimax Algorithm EXPLAINED) https://youtu.be/fT3YWCKvuQE
+[Video]: https://youtu.be/fT3YWCKvuQE "Coding an UNBEATABLE Tic Tac Toe AI (Game Theory Minimax Algorithm EXPLAINED)" 
 
 [Alpha-beta pruning]: https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning "Alpha-beta pruning"
