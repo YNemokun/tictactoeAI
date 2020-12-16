@@ -195,7 +195,7 @@ When choosing a player, type either "X" or "O", else the code will ask you to tr
   On the bottom left of the pie charts, when X and O both play randomly, O only wins 28% of times. However, on the bottom right, where O is using the AI, O's losing rate (X's winning rate) successfully decreases from 59% to 7.8%. When two AI play against each other as on the top left, 30% more draws are generated than the pie chart on the left, when O is random. The O-AI player increases the difficulty for X-AI player to win.
 
   Our AI algorithm is proven to be effective, but there are still some space for improvement. As for now, the get_min/get_max method will only return the index of the first min value it encounters (for example, when both position 2 and position 6 has the lowest utility value 0, the get_min method will only return 2). We look forward to 
-modifying this flaw so that when there are multiple mins/maxs, the algorithm is able to randomly pick one of them. To further improve its efficiency, we might also consider applying the [Alpha-beta pruning] [2] so that the AI does not need to explore every existing state.
+modifying this flaw so that when there are multiple mins/maxs, the algorithm is able to randomly pick one of them. To further improve its efficiency, we might also consider applying the [Alpha-beta pruning] so that the AI does not need to explore every existing state.
 
   We will continue to apply machine learning on tic-tac-toe and explore its efficiency. Next step will be a classification model on tic-tac-toe that can classify steps through randomly-generated games and find the move with the highest percent of winning. 
 
@@ -204,4 +204,4 @@ modifying this flaw so that when there are multiple mins/maxs, the algorithm is 
 
 [1]: Coding an UNBEATABLE Tic Tac Toe AI (Game Theory Minimax Algorithm EXPLAINED) https://youtu.be/fT3YWCKvuQE
 
-[2]: https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning "Alpha-beta pruning"
+[Alpha-beta pruning]: https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning "Alpha-beta pruning"
